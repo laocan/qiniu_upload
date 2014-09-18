@@ -12,7 +12,8 @@ how to use
 ---
 
 1. 编译源码
-2. 拷贝编译后的可执行文件到update.bat所在目录
+2. 下载解压[http://pan.baidu.com/s/1c0Cgl1Y](http://pan.baidu.com/s/1c0Cgl1Y)到任意目录
+3. 拷贝编译后的可执行文件到update.bat所在目录
 
 目录结构如下：
 
@@ -32,7 +33,7 @@ how to use
 ```
 
 
-3. 修改AK,SK,空间名字和上传目录
+4. 修改AK,SK,空间名字和上传目录
 
 > 拖拽的文件将会拷贝到上传目录后再上传到七牛。
 
