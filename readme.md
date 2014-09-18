@@ -5,7 +5,7 @@
 软件预览
 ---
 
-!()[http://leeyoung-image.qiniudn.com/2014-09-18_00004.jpg]
+![http://leeyoung-image.qiniudn.com/2014-09-18_00004.jpg](http://leeyoung-image.qiniudn.com/2014-09-18_00004.jpg)
 
 
 how to use
@@ -38,4 +38,4 @@ how to use
 > 拖拽的文件将会拷贝到上传目录后再上传到七牛。
 
 
-!()[http://leeyoung-image.qiniudn.com/2014-09-18_00006.jpg]
+![](http://leeyoung-image.qiniudn.com/2014-09-18_00006.jpg)
