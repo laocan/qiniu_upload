@@ -20,7 +20,8 @@
 #include <QMessageBox>
 #include <QStringListModel>
 #include <QClipboard>
-
+#include <QUrl>
+#include <QByteArray>
 namespace Ui {
 class Dialog;
 }

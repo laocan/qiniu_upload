@@ -159,12 +159,12 @@ void Dialog::dropEvent(QDropEvent *e)
             ui->listWidget->addItem(url.fileName());
 
         }
-//调用upload.bat
+//调用upload.bat / .sh
         QProcess *pProces = new QProcess(this);
         connect(pProces, SIGNAL(readyRead()),this, SLOT(on_upload()));
         QStringList  list;
         //list<<"conf.json";
-        pProces->start("update.bat", list);
+        pProces->start("./upload.sh", list);//for macox
     }
 }
 
@@ -173,8 +173,9 @@ void Dialog::dropEvent(QDropEvent *e)
 void Dialog::on_pushButton_clicked()
 {
     QString outurl;
-    outurl="http://"+ui->bucketEdit->toPlainText()+".qiniudn.com/"+ui->listWidget->currentItem()->text();
-
+    outurl="http://"+ui->bucketEdit->toPlainText()+".qiniudn.com/"+
+            (QUrl::toPercentEncoding(ui->listWidget->currentItem()->text())).constData();
+   // QByteArray ba = QUrl::toPercentEncoding(outurl);
     if(outurl.length()==0){
         ui->lineEdit->setText("请选中文件");
     }
