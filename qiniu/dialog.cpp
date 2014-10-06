@@ -8,6 +8,8 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    this->setWindowFlags(  Qt::WindowMinimizeButtonHint);
+
     setAcceptDrops(true);
     //读取json文件  使用https://github.com/gaudecker/qt-json
     QString json = readFile("conf.json");
